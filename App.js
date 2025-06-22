@@ -2,10 +2,10 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as Notifications from 'expo-notifications';
+// import * as Notifications from 'expo-notifications';
 import { useEffect } from 'react';
 // import { registerForPushNotificationsAsync } from './notificationHelper';
-import { scheduleWorkoutReminder } from './notificationHelper';
+// import { scheduleWorkoutReminder } from './notificationHelper';
 
 
 // Import screens (we will create these next)

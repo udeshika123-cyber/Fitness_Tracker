@@ -1,17 +1,17 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet,useColorScheme } from 'react-native';
-import * as Notifications from 'expo-notifications';
-import { scheduleWorkoutReminder } from '../notificationHelper';
+// import * as Notifications from 'expo-notifications';
+// import { scheduleWorkoutReminder } from '../notificationHelper';
 
-const scheduleReminder = async () => {
-  await Notifications.scheduleNotificationAsync({
-    content: {
-      title: "🏋️ Workout Reminder",
-      body: "Don't forget to log your workout today, Udeshi!",
-    },
-    trigger: { seconds: 10 }, // sends in 10 seconds
-  });
-};
+// const scheduleReminder = async () => {
+//   await Notifications.scheduleNotificationAsync({
+//     content: {
+//       title: "🏋️ Workout Reminder",
+//       body: "Don't forget to log your workout today, Udeshi!",
+//     },
+//     trigger: { seconds: 10 }, // sends in 10 seconds
+//   });
+// };
 
 export default function HomeScreen({ navigation }) {
 
@@ -42,7 +42,7 @@ export default function HomeScreen({ navigation }) {
       <Button title="View Progress" onPress={() => navigation.navigate('Progress')} />
       <Button title="Set Goals" onPress={() => navigation.navigate('Goals')} />
       <Button title="My Profile" onPress={() => navigation.navigate('Profile')} />
-      <Button title="Test Reminder" onPress={scheduleWorkoutReminder} />
+      
 
     </View>
   );
